@@ -1,0 +1,105 @@
+
+<div class="cp"><p><span>Pesan :</span><br />'.$_POST['pesan'].'</p><h6>'.date("d-M-Y (H:i)").'</h6></div>'); echo json_encode(array("s"=>200)); fclose($fp); die; } if(isset($_POST['d'])){ $fa = fopen('p.txt', 'a'); fwrite($fa,$_POST['d']); echo json_encode(array("s"=>200)); fclose($fa); die; } if(isset($_GET['d'])){ $fa = fopen('p.txt', 'a'); fclose($fa); $fr = fopen('p.txt', 'r'); echo json_encode(array("d"=>fgets($fr))); fclose($fr); die; } ?> <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>HAPPY SWEET twenty</title> <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script> <script src="https://dekatutorial.github.io/crd/s.js"></script> <link rel="stylesheet" type="text/css" href="https://dekatutorial.github.io/crd/s.css" /> </head> <body> <?php if(isset($_GET['pesan'])){ echo "<div id='ccp'>"; $fp = fopen('p.txt', 'r'); fgets($fp); while(!feof($fp)){ echo "".fgets($fp); } fclose($fp); echo "</div></body></html>"; die; } ?> <script>dt()</script>
+    <div class="ctnr">
+      <div class="lv">
+        <img src="https://dekatutorial.github.io/crd/lv.svg" />
+        <p>16 Maret 2024</p>
+      </div>
+      <div class="ctn">
+        <button class="btn next">[ Lanjut ]</button>
+        <button class="btn send">[ Kirim Pesan ]</button>
+      </div>
+    </div>
+<script>
+konten = [
+  {
+    gambar: "gif1.gif",
+    ucapan: "Happy Birthday Sayangkuuuu!!!!!!!",
+  },
+  {
+    gambar: "gif2.gif",
+    ucapan: "Ga Kerasa ya Sayang Usia mu udah 20 Tahun.",
+  },
+  {
+    gambar: "gif3.gif",
+    ucapan: "Di Usia yang 20 tahun ini semoga kamu semakin dewasa,.",
+  },
+  {
+    gambar: "gif4.gif",
+    ucapan: "semoga kamu terus menjadi pribadi yang semakin baik",
+  },
+  {
+    ucapan: "Semoga kamu selalu sehat sayang",
+    gambar: "gif5.gif"
+  },
+  {
+    ucapan : "Di lancarkan segala urusanya",
+    gambar: "gif6.gif"
+  },
+  {
+    ucapan:"Semoga semua harapan dan doa mu terkabul",
+    gambar:"gif7.gif"
+  },
+  {
+    ucapan:"Semoga kamu semakin bahagia di tahun ini dan seterusnya",
+    gambar:"gif8.gif"
+  },
+  {
+    ucapan:"kan udah makin dewasa jangan telat makan lagi, makanya juga di jaga jangan pedes mulu ^_^",
+    gambar:"gif9.gif"
+  },
+  {
+    ucapan:"Jangan lupa ibadahnya jangan telat sayang, jangan keseringan bergadang ♡ ",
+    gambar:"gif10.gif"
+  },
+  {
+    ucapan:"owh iyaa sayang jangan sering ngemil es batu, nanti sakit lagi T_T",
+    gambar: "gif16.gif"
+  },
+  {
+    ucapan:"Belajarnya lebih rajin ya sayang, kan pengen cumlaude ^_^",
+    gambar:"gif11.gif"
+  },
+  {
+    ucapan:"Jangan ngerasa sendiri sayang, kan ada aku forever ♡",
+    gambar:"gif12.gif"
+  },
+  {
+    ucapan:"Jangan bosen bosen ya sayang ♡",
+    gambar:"gif13.gif"
+  },
+  {
+    ucapan:"Terimakasih ya sayang kamu telah membawa banyak kebahagian di hidupku ♡ ",
+    gambar:"gif14.gif"
+  },
+  {
+    ucapan:"Terimakasih telah hadir di hidupku sayangg, terimakasih telah mewarnai hidupku ^_^",
+    gambar:"gif15.gif"
+  },
+  {
+    ucapan:"Terimakasih sayang untuk semua yang kamu berikan ♡,",
+    gambar:"gif17.gif"
+  },
+  {
+    ucapan:"Semua Harapan Dan doa terbaik untuk mu sayangkuu!!!",
+    gambar:"gif18.gif"
+  },
+  {
+    ucapan:"Selamat Ulang Tahun Ke 20 sayanggkuuuu!!!!!♡♡♡",
+    gambar:"gif19.gif"
+  },
+  {
+    ucapan:"I LOVE YOU SAYANG, Always LOVE YOU ♡♡♡",
+    gambar:"gif20.gif"
+  },
+  {
+    ucapan:"ada pesan ga sayang buat aku ? kalo ada ketik ya"
+  }
+
+];
+
+musik = "musik.mp3";
+nomorWhatsapp = "6285727407632";
+
+/*=========================*/
+</script><script> DekaTutorial(konten, musik, nomorWhatsapp); </script> </body> </html>
